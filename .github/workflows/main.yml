@@ -48,6 +48,7 @@ jobs:
             username: ${{ secrets.LOGIN }}
             password: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
+            server-dir: /sebastian_leszczynski/
             local-dir: ${{ secrets.DIRECTORY }}
         
 
