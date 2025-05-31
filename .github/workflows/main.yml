@@ -39,17 +39,17 @@ jobs:
         needs: cypress-run
         steps:
         - name: Get latest code
-          uses: actions/checkout@v4
+          uses: actions/checkout@v2
 
         - name: Sync files
-          uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+          uses: SamKirkland/FTP-Deploy-Action@v4.3.2
           with:
             server: ${{ secrets.HOST }}
             username: ${{ secrets.LOGIN }}
             password: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
-            server-dir: /sebastian_leszczynski/
-            local-dir: ${{ secrets.DIRECTORY }}
+            server-dir: ./sebastian_leszczynski/
+            # local-dir: ./sebastian_leszczynski/
         
 
 
