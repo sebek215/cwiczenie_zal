@@ -44,7 +44,7 @@ jobs:
         - name: Sync files
           uses: SamKirkland/FTP-Deploy-Action@v4.3.2
           with:
-            server: ${{ secrets.HOST }}
+            server: s31.mydevil.net
             username: ${{ secrets.LOGIN }}
             password: ${{ secrets.PASSWORD }}
             port: ${{ secrets.PORT }}
